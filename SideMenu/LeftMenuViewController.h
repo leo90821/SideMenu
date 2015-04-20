@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LeftMenuViewController : UIViewController
+@interface LeftMenuViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+
+@property (strong, nonatomic) UITableView *menuTable;
+@property (strong, nonatomic) NSArray *menuList;
 
 @end

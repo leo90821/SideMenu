@@ -17,5 +17,8 @@
 @property (strong, nonatomic) RightMenuViewController *rightMenu;
 @property (strong, nonatomic) MiddleViewController *midView;
 
+- (void)didClickLeftMenuButton:(id)sender;
+- (void)didClickRightMenuButton:(id)sender;
+
 @end
 
