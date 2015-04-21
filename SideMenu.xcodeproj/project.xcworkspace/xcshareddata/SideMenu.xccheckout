@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>322D259A-0B13-4857-A995-597389CB6D7D</string>
+	<key>IDESourceControlProjectName</key>
+	<string>SideMenu</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>185DDB99DB41CF133D5A0C0A9ED7057A328FEA4F</key>
+		<string>https://github.com/leo90821/SideMenu.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>SideMenu.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>185DDB99DB41CF133D5A0C0A9ED7057A328FEA4F</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/leo90821/SideMenu.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>185DDB99DB41CF133D5A0C0A9ED7057A328FEA4F</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>185DDB99DB41CF133D5A0C0A9ED7057A328FEA4F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>SideMenu</string>
+		</dict>
+	</array>
+</dict>
+</plist>
