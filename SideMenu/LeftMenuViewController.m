@@ -8,6 +8,7 @@
 
 #import "LeftMenuViewController.h"
 #import "DefinatonsHeader.h"
+#import "AboutMeViewController.h"
 
 @interface LeftMenuViewController ()
 
@@ -52,6 +53,22 @@
     return cell;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    NSInteger row = indexPath.row;
+    NSLog(@"%ld", (long)row);
+    switch (row) {
+        case 0: {
+            AboutMeViewController *aboutMe = [[AboutMeViewController alloc] init];
+            [self.navigationController pushViewController:aboutMe animated:YES];
+            break;
+        }
+        default: {
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Select" message:@"Error" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
+            [alert show];
+            break;
+        }
+    }
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

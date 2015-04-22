@@ -29,16 +29,17 @@
     RightMenuViewController *rightMenu = [[RightMenuViewController alloc] init];
     MiddleViewController *midView = [[MiddleViewController alloc] init];
     
-    //push middle the middle view controller(first view) to navigation stack bottom
-    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:midView];
-    NSLog(@"%@", [navController viewControllers]);//print controllers in stack
     
     //create the controller of three view controller
     ViewController *viewsController = [[ViewController alloc] init];
     viewsController.leftMenu = leftMenu;
     viewsController.rightMenu = rightMenu;
     viewsController.midView = midView;
-    
+    //push middle the middle view controller(first view) to navigation stack bottom
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:viewsController];
+    [navController.navigationController pushViewController:viewsController animated:NO];
+    NSLog(@"%@", [navController viewControllers]);//print controllers in stack
+    NSLog(@"%@", navController.navigationController);
     //RootCotroller
     self.window.rootViewController = viewsController;
     [self.window makeKeyAndVisible];

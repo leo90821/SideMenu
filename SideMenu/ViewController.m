@@ -55,11 +55,13 @@
         [UIView animateWithDuration:0.2 animations:^{
             self.leftMenu.view.frame = CGRectMake(0, 0, ScreenWidth, ScreenHeight);
             self.midView.view.frame = CGRectMake(280, 65, ScreenWidth, ScreenHeight - 65*2);
+            [self.navigationController pushViewController:self.leftMenu animated:NO];
         } completion:^(BOOL finished){}];
     } else {
         [UIView animateWithDuration:0.2 animations:^{
             self.midView.view.frame = CGRectMake(0, 0, ScreenWidth, ScreenHeight);
             self.leftMenu.view.frame = CGRectMake(0, 0, ScreenWidth, ScreenHeight);
+            [self.navigationController popViewControllerAnimated:NO];
         }];
     }
 }

@@ -16,6 +16,7 @@
 		0E8D917F1AE4BF1E00B036E9 /* LeftMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E8D917E1AE4BF1E00B036E9 /* LeftMenuViewController.m */; };
 		0E8D91821AE4BF3400B036E9 /* RightMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E8D91811AE4BF3400B036E9 /* RightMenuViewController.m */; };
 		0E8D91851AE4BF5500B036E9 /* MiddleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E8D91841AE4BF5500B036E9 /* MiddleViewController.m */; };
+		0EF495CB1AE7276E00EB5684 /* AboutMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EF495CA1AE7276E00EB5684 /* AboutMeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,8 @@
 		0E8D91831AE4BF5500B036E9 /* MiddleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MiddleViewController.h; sourceTree = "<group>"; };
 		0E8D91841AE4BF5500B036E9 /* MiddleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MiddleViewController.m; sourceTree = "<group>"; };
 		0E8D91861AE4BF8100B036E9 /* DefinatonsHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DefinatonsHeader.h; sourceTree = "<group>"; };
+		0EF495C91AE7276E00EB5684 /* AboutMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutMeViewController.h; sourceTree = "<group>"; };
+		0EF495CA1AE7276E00EB5684 /* AboutMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutMeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +106,8 @@
 				0E8D91831AE4BF5500B036E9 /* MiddleViewController.h */,
 				0E8D91841AE4BF5500B036E9 /* MiddleViewController.m */,
 				0E8D91861AE4BF8100B036E9 /* DefinatonsHeader.h */,
+				0EF495C91AE7276E00EB5684 /* AboutMeViewController.h */,
+				0EF495CA1AE7276E00EB5684 /* AboutMeViewController.m */,
 			);
 			path = SideMenu;
 			sourceTree = "<group>";
@@ -237,6 +242,7 @@
 				0E8D915D1AE4BED300B036E9 /* AppDelegate.m in Sources */,
 				0E8D917F1AE4BF1E00B036E9 /* LeftMenuViewController.m in Sources */,
 				0E8D915A1AE4BED300B036E9 /* main.m in Sources */,
+				0EF495CB1AE7276E00EB5684 /* AboutMeViewController.m in Sources */,
 				0E8D91821AE4BF3400B036E9 /* RightMenuViewController.m in Sources */,
 				0E8D91851AE4BF5500B036E9 /* MiddleViewController.m in Sources */,
 			);
