@@ -37,9 +37,9 @@
     viewsController.midView = midView;
     //push middle the middle view controller(first view) to navigation stack bottom
     UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:viewsController];
-    [navController.navigationController pushViewController:viewsController animated:NO];
-    NSLog(@"%@", [navController viewControllers]);//print controllers in stack
-    NSLog(@"%@", navController.navigationController);
+    [navController.navigationController pushViewController:viewsController animated:YES];
+    NSLog(@"app:%@", [navController viewControllers]);//print controllers in stack
+    NSLog(@"app:%@", navController.navigationController);
     //RootCotroller
     self.window.rootViewController = viewsController;
     [self.window makeKeyAndVisible];

@@ -22,7 +22,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     [self.view setBackgroundColor:[UIColor grayColor]];
-    NSLog(@"%.2f/%.2f", ScreenHeight, ScreenWidth);
+   // NSLog(@"%.2f/%.2f", ScreenHeight, ScreenWidth);
     //menu buttons
     UIButton *leftButton = [UIButton buttonWithType:UIButtonTypeSystem];
     leftButton.frame = CGRectMake(0, 30, 100, 45);
@@ -30,7 +30,7 @@
     [leftButton addTarget:self action:@selector(didClickLeftMenuButton:) forControlEvents:UIControlEventTouchUpInside];
     
     UIButton *rightButton = [UIButton buttonWithType:UIButtonTypeSystem];
-    rightButton.frame = CGRectMake(250, 30, 100, 45);
+    rightButton.frame = CGRectMake(ScreenWidth - 110, 30, 100, 45);
     [rightButton setTitle:@"Right Menu" forState:UIControlStateNormal];
     [rightButton addTarget:self action:@selector(didClickRightMenuButton:) forControlEvents:UIControlEventTouchUpInside];
     
@@ -40,6 +40,12 @@
     //add child controllers and subviews to views controller
     //attention : middle view must add at last
     //notice : must import view controller header files
+//    if (self.rightMenu == nil) {
+//        self.rightMenu = [[RightMenuViewController alloc] init];
+//    }
+//    if (self.leftMenu == nil) {
+//        self.leftMenu = [[LeftMenuViewController alloc] init];
+//    }
     [self addChildViewController:self.rightMenu];
     [self.view addSubview:self.rightMenu.view];//bottom view
     
@@ -48,14 +54,19 @@
    
     [self addChildViewController:self.midView];//top view
     [self.view addSubview:self.midView.view];
+    NSLog(@"views:%@", self.navigationController);
+    NSLog(@"views:%@", [self.navigationController viewControllers]);
 }
 
 - (void)didClickLeftMenuButton:(id)sender {
     if (self.midView.view.frame.origin.x == 0) {
         [UIView animateWithDuration:0.2 animations:^{
             self.leftMenu.view.frame = CGRectMake(0, 0, ScreenWidth, ScreenHeight);
-            self.midView.view.frame = CGRectMake(280, 65, ScreenWidth, ScreenHeight - 65*2);
+            self.midView.view.frame = CGRectMake(260, 65, ScreenWidth, ScreenHeight - 65*2);
             [self.navigationController pushViewController:self.leftMenu animated:NO];
+            NSLog(@"views:%@", self.navigationController);
+            NSLog(@"views:%@", [self.navigationController viewControllers]);
+            
         } completion:^(BOOL finished){}];
     } else {
         [UIView animateWithDuration:0.2 animations:^{
@@ -70,10 +81,10 @@
     if (self.midView.view.frame.origin.x == 0) {
         [UIView animateWithDuration:0.2 animations:^{
             self.rightMenu.view.frame = CGRectMake(0, 0, ScreenWidth, ScreenHeight);
-            self.midView.view.frame = CGRectMake(-280, 0, ScreenWidth, ScreenHeight);
+            self.midView.view.frame = CGRectMake(-260, 0, ScreenWidth, ScreenHeight);
             self.leftMenu.view.frame = CGRectMake(-ScreenWidth, 0, ScreenWidth, ScreenHeight);//reson : left cover right
         } completion:^(BOOL finished){
-            NSLog(@"rightMenu Animation Complete");
+            //NSLog(@"rightMenu Animation Complete");
         }];
     } else {
         [UIView animateWithDuration:0.2 animations:^{
@@ -81,7 +92,7 @@
             self.rightMenu.view.frame = CGRectMake(0, 0, ScreenWidth, ScreenHeight);
             self.leftMenu.view.frame = CGRectMake(0, 0, ScreenWidth, ScreenHeight);
         } completion:^(BOOL finished){
-            NSLog(@"Middle View Animation Complete");
+            //NSLog(@"Middle View Animation Complete");
         }];
     }
 }

@@ -31,7 +31,8 @@
     [self.menuTable setBackgroundColor:[UIColor orangeColor]];
     
     [self.view addSubview:self.menuTable];
-    
+    NSLog(@"left:%@", self.navigationController);
+    NSLog(@"left:%@", [self.navigationController viewControllers]);
 }
 //Required!!!!
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -59,7 +60,8 @@
     switch (row) {
         case 0: {
             AboutMeViewController *aboutMe = [[AboutMeViewController alloc] init];
-            [self.navigationController pushViewController:aboutMe animated:YES];
+            //[self.navigationController pushViewController:aboutMe animated:YES];
+            [self presentViewController:aboutMe animated:YES completion:^(void){NSLog(@"finished");}];
             break;
         }
         default: {

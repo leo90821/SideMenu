@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+@class User;
 
 @interface AboutMeViewController : UIViewController
+
+@property (strong, nonatomic) User *user1;
+
+- (void)backToMidView:(id)sender;
 
 @end

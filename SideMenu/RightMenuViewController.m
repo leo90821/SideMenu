@@ -18,6 +18,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self.view setBackgroundColor:[UIColor greenColor]];
+    NSLog(@"right:%@", self.navigationController);
+    NSLog(@"right:%@", [self.navigationController viewControllers]);
 }
 
 - (void)didReceiveMemoryWarning {

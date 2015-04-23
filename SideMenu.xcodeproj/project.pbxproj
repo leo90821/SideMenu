@@ -17,6 +17,7 @@
 		0E8D91821AE4BF3400B036E9 /* RightMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E8D91811AE4BF3400B036E9 /* RightMenuViewController.m */; };
 		0E8D91851AE4BF5500B036E9 /* MiddleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E8D91841AE4BF5500B036E9 /* MiddleViewController.m */; };
 		0EF495CB1AE7276E00EB5684 /* AboutMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EF495CA1AE7276E00EB5684 /* AboutMeViewController.m */; };
+		0EF495CE1AE87BF600EB5684 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EF495CD1AE87BF600EB5684 /* User.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		0E8D91861AE4BF8100B036E9 /* DefinatonsHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DefinatonsHeader.h; sourceTree = "<group>"; };
 		0EF495C91AE7276E00EB5684 /* AboutMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutMeViewController.h; sourceTree = "<group>"; };
 		0EF495CA1AE7276E00EB5684 /* AboutMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutMeViewController.m; sourceTree = "<group>"; };
+		0EF495CC1AE87BF600EB5684 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = User.h; path = ../User.h; sourceTree = "<group>"; };
+		0EF495CD1AE87BF600EB5684 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = User.m; path = ../User.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +111,8 @@
 				0E8D91861AE4BF8100B036E9 /* DefinatonsHeader.h */,
 				0EF495C91AE7276E00EB5684 /* AboutMeViewController.h */,
 				0EF495CA1AE7276E00EB5684 /* AboutMeViewController.m */,
+				0EF495CC1AE87BF600EB5684 /* User.h */,
+				0EF495CD1AE87BF600EB5684 /* User.m */,
 			);
 			path = SideMenu;
 			sourceTree = "<group>";
@@ -238,6 +243,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0EF495CE1AE87BF600EB5684 /* User.m in Sources */,
 				0E8D91601AE4BED300B036E9 /* ViewController.m in Sources */,
 				0E8D915D1AE4BED300B036E9 /* AppDelegate.m in Sources */,
 				0E8D917F1AE4BF1E00B036E9 /* LeftMenuViewController.m in Sources */,
@@ -296,7 +302,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Man Jiang (4ASDB362J8)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Man Jiang (4ASDB362J8)";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -338,7 +344,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Man Jiang (4ASDB362J8)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Man Jiang (4ASDB362J8)";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -361,7 +367,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Man Jiang (4ASDB362J8)";
 				INFOPLIST_FILE = SideMenu/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -374,7 +380,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Man Jiang (4ASDB362J8)";
 				INFOPLIST_FILE = SideMenu/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
