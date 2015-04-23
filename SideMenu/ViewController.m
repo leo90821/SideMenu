@@ -62,7 +62,7 @@
     if (self.midView.view.frame.origin.x == 0) {
         [UIView animateWithDuration:0.2 animations:^{
             self.leftMenu.view.frame = CGRectMake(0, 0, ScreenWidth, ScreenHeight);
-            self.midView.view.frame = CGRectMake(260, 65, ScreenWidth, ScreenHeight - 65*2);
+            self.midView.view.frame = CGRectMake(MenuWidth, 65, ScreenWidth, ScreenHeight - 65*2);
             [self.navigationController pushViewController:self.leftMenu animated:NO];
             NSLog(@"views:%@", self.navigationController);
             NSLog(@"views:%@", [self.navigationController viewControllers]);
@@ -81,7 +81,7 @@
     if (self.midView.view.frame.origin.x == 0) {
         [UIView animateWithDuration:0.2 animations:^{
             self.rightMenu.view.frame = CGRectMake(0, 0, ScreenWidth, ScreenHeight);
-            self.midView.view.frame = CGRectMake(-260, 0, ScreenWidth, ScreenHeight);
+            self.midView.view.frame = CGRectMake(-MenuWidth, 0, ScreenWidth, ScreenHeight);
             self.leftMenu.view.frame = CGRectMake(-ScreenWidth, 0, ScreenWidth, ScreenHeight);//reson : left cover right
         } completion:^(BOOL finished){
             //NSLog(@"rightMenu Animation Complete");

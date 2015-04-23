@@ -10,5 +10,6 @@
 #define SideMenu_DefinatonsHeader_h
 #define ScreenWidth [[UIScreen mainScreen] bounds].size.width
 #define ScreenHeight [[UIScreen mainScreen] bounds].size.height
+#define MenuWidth ScreenWidth * 2.0/3.0
 
 #endif
