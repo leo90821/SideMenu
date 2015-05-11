@@ -68,6 +68,10 @@
             NSLog(@"Error description = %@", [error description]);
         }
     }
+    
+    NSLog(@"aboutme: %@", self.navigationController);
+    NSLog(@"aboutme stack: %@", [self.navigationController viewControllers]);
+    
 //    NSMutableURLRequest *request=[NSMutableURLRequest requestWithURL:[NSURL  URLWithString:@"http://waterservices.usgs.gov/nwis/iv/?sites=%@&period=PT%@luH&format=json", guageID, hours]];
 //    [request setHTTPMethod:@"GET"];
 //    [request setValue:@"application/json;charset=UTF-8" forHTTPHeaderField:@"content-type"];
@@ -88,7 +92,8 @@
 }
 
 - (void)backToMidView:(id)sender {
-    [self dismissViewControllerAnimated:YES completion:nil];
+    [self.navigationController popToRootViewControllerAnimated:YES];
+    //[self dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (void)didReceiveMemoryWarning {

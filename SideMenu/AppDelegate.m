@@ -29,19 +29,30 @@
     RightMenuViewController *rightMenu = [[RightMenuViewController alloc] init];
     MiddleViewController *midView = [[MiddleViewController alloc] init];
     
-    
     //create the controller of three view controller
     ViewController *viewsController = [[ViewController alloc] init];
     viewsController.leftMenu = leftMenu;
     viewsController.rightMenu = rightMenu;
     viewsController.midView = midView;
+    
     //push middle the middle view controller(first view) to navigation stack bottom
     UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:viewsController];
-    [navController.navigationController pushViewController:viewsController animated:YES];
+    //[navController.navigationController pushViewController:viewsController animated:YES];
     NSLog(@"app:%@", [navController viewControllers]);//print controllers in stack
     NSLog(@"app:%@", navController.navigationController);
+    //navController.navigationBarHidden = NO;
+    //navController.toolbarHidden = NO;
     //RootCotroller
-    self.window.rootViewController = viewsController;
+    self.window.rootViewController = navController;//!!!!!only if window root controller is navigation controller ,can return navigation stack
+    /*
+     http://stackoverflow.com/questions/7767049/self-navigationcontroller-is-null
+     The navigationController property of a view controller will return a valid navigation controller object only if the view controller is in a navigation controller's navigation stack. A view controller can be added to a navigation stack in the following ways.
+     
+     By making the view controller the rootViewController of a navigation controller using initWithRootViewController: method of UINavigationController
+     
+     By pushing the view controller using pushViewController: method of UINavigationController.
+     */
+    [self.window addSubview:viewsController.view];
     [self.window makeKeyAndVisible];
     return YES;
 }

@@ -60,8 +60,8 @@
     switch (row) {
         case 0: {
             AboutMeViewController *aboutMe = [[AboutMeViewController alloc] init];
-            //[self.navigationController pushViewController:aboutMe animated:YES];
-            [self presentViewController:aboutMe animated:YES completion:^(void){NSLog(@"finished");}];
+            [self.navigationController pushViewController:aboutMe animated:YES];
+            //[self presentViewController:aboutMe animated:YES completion:^(void){NSLog(@"finished");}];
             break;
         }
         default: {
